@@ -12,7 +12,6 @@ df = pd.read_excel(
     engine='openpyxl',
     sheet_name='Standard_Civil',
     usecols='A:F'
-
 )
 
 
@@ -45,4 +44,4 @@ df_selection = df.query(
     "TYPE == @type & LV == @lv & @input_mgd_min <= MGD <= @input_mgd_max"
 )
 
-st.dataframe(df_selection)
+st.table(df_selection)
