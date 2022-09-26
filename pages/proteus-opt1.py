@@ -12,6 +12,7 @@ df = pd.read_excel(
     io='proteus_python_one.xlsx',
     engine='openpyxl',
     sheet_name='Standard_Civil',
+    usecols='A:H',
 )
 
 with st.sidebar.form("my_form"):
