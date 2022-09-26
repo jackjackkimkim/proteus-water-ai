@@ -43,4 +43,4 @@ df_selection = df.query(
     "TYPE == @type & LV == @lv & @input_mgd_min <= MGD <= @input_mgd_max"
 )
 
-st.dataframe(df_selection)
+st.table(df_selection)
